@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="utf-8">
+    <title>VELO'V</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+</head>
+
+    
+<body>
+
+    <header id="container-header">
+        <p>scroll down</p>
+        <div class="content-header">
+            <div class="logo">VELO'V</div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#container-slider">INFOS</a></li>
+                     <li><a href="#bloc-map">RÉSERVER UN VÉLO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="container-slider">
+        <div class="title">
+            <h1 class="h1-slider">SIMPLE COMME BONJOUR</h1>
+            <p class="sous-titre"> Retrouvez toutes les infos ici !</p>
+        </div>
+
+        <div id="content-slider">
+            <div id="carrousel">
+                <div id="slide1" class="slide">
+                    <div><img src="images/img-1.jpg" alt="Velo'V la location de vélo à Lyon"></div>
+                    <div class="texte">
+                        <h1 class="titre-slide"><strong>VELO'V</strong></h1>
+                        <p class="sous-titre-slide">Des vélos intelligents et connectés pour des déplacements plus simples !</p>
+                    </div>
+                </div>
+                
+                <div id="slide2" class="slide">
+                    <div><img src="images/img-2.jpg" alt="Les services Velo'V"></div>
+                    <div class="texte">
+                        <h1 class="titre-slide"><strong>LES STATIONS</strong></h1>
+                        <p class="sous-titre-slide">Au coeur du dispositif de vélos <br/>en libre-service !</p>
+                    </div>
+                </div>
+
+                <div id="slide3" class="slide">
+                    <div><img src="images/img-3.jpg" alt="Les avantages Velo'V"></div>
+                    <div class="texte">
+                        <h1 class="titre-slide"><strong>LES FORFAITS</strong></h1>
+                        <p class="sous-titre-slide">Des abonnements pour les utilisateurs réguliers. <br/>Des pass 1 & 7 jours pour les utilisateurs occasionnels.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-arrows">
+                <div id="button-previous"><i class="fas fa-angle-left fa-lg"></i></div>
+                <div id="button-next"><i class="fas fa-angle-right fa-lg"></i></div>
+            </div>
+        </div>
+
+         <div class="container-txt">
+            <div class="txt-1">
+                <p class="left-txt">VELO'V</p>
+                <p class="right-txt">Le vélo électrique n’est pas la seule innovation technologique des nouveaux Vélib’. Tous les vélos offrent aussi une V-Box embarquée, pour mieux se guider, et une sécurisation renforcée avec la fourche cadenas. La V-Box est un boîtier électronique, encastré dans le guidon, qui permet un accès direct et rapide au vélo. Ce boîtier est autonome en énergie car rechargé par la dynamo. Il communique avec la station via un émetteur/récepteur radio et peut ainsi remonter des données vers les systèmes d’information du service Velo'V.</p>
+            </div>
+            <div class="txt-2">
+                <p class="left-txt">LES STATIONS</p>
+                <p class="right-txt">Le système de gestion de la surcapacité déployé avec le nouveau Velo'V est unique. Ce système repose sur la possibilité d’accrocher un vélo « tête-bêche » entre deux vélos stationnés dans une station pleine. Paramétrable et flexible, le « Park + » est la fonctionnalité emblématique de la nouvelle génération de vélos en libre-service. Les vélos ainsi accrochés restent sécurisés car reliés par un câble et protégés par un neiman qui bloque le guidon. L’occupation de la voirie reste ainsi limitée à l’emprise de la station.</p>
+            </div>
+            <div class="txt-3">
+                <p class="left-txt">LES FORFAITS</p>
+                <p class="right-txt">Pour répondre à tous vos besoins de déplacements, Velo'V vous propose une large gamme de forfaits. Des abonnements pour les utilisateurs réguliers. Des pass 1 & 7 jours pour les utilisateurs occasionnels. Découvrez le forfait qui correspond le mieux à votre usage et à vos envies ! Un pass valable 7 jours qui permet de prendre jusqu'à 5 Vélib' simultanément à 15€. Un pass valable 24h qui permet de prendre jusqu'à 5 Vélib' simultanément à 5€.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="bloc-map">
+        <div class="title-map">
+            <h1 class="h1-map">RÉSERVEZ</h1>
+            <p class="sous-titre-map">Cliquez sur la station de votre choix et réservez un vélo en 2 clics !</p>
+        </div>
+        <div id="container-map">
+            <div id="map"></div>
+            <div id="content">
+                <div id="infos">
+                    <p>Nom de la station :</p><p class="name"></p>
+                    <p>Adresse :</p><p class="address"></p>
+                    <p>Etat de la station :</p><p class="status"></p>
+                    <p>Nombre de vélo(s) disponible(s) :</p><p class="available_bikes"></p>
+                    <p>Nombre de point(s) d'attache pour ranger son vélo :</p><p class="available_bike_stands"></p>
+                    <button id="valider"> VALIDER </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="container-canvas">
+        <p> Signez pour réserver votre vélo</p>
+        <div class="content-canvas">
+            <canvas width="700" height="300" id="sign"></canvas>
+            <br/>
+            <div class="butt-canvas">
+                <button id="clear">Effacer</button> 
+                <button id="butt-book">Réserver</button> 
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <div class="content-book">
+        <div class="bloc" id="bloc-1">
+            <h2>STATION RÉSERVÉE</h2>
+            <p class="nomStation"></p>
+        </div>
+        <div class="bloc" id="bloc-2">
+            <h2>À L'ADRESSE </h2>
+            <p class="nomAdresse"></p>
+        </div>
+        <div class="bloc" id="bloc-3">
+            <h2>IL VOUS RESTE</h2>
+            <p id="countdown"></p>
+        </div>
+        <div class="bloc" id="bloc-4">
+            <button id="annuler">ANNULER LA RÉSERVATION</button>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/slider.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjsrLLghuPsNd2gvoIIKC6OfJUaVHDjsc"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/countdown.js"></script>
+
+    <script src="js/global.js"></script>
+
+
+</body>
+
+    
+    
+</html>
