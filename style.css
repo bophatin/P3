@@ -1,0 +1,561 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* ACCUEIL */
+
+#container-header {
+	max-width: 100%;
+	height:926px;
+	background: url("images/bike.jpg") no-repeat fixed;
+
+}
+
+#container-header p {
+	padding-top: 850px;
+	text-align: center;
+	font-style: italic;
+	color: #e4a49e;
+}
+
+.content-header {
+	display: flex;
+	height: 90px;
+}
+
+header .content-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: white;
+	z-index: 1000;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.logo {
+	height: 55px;
+	margin: auto;
+	margin-left: 8%;
+	font-size: 50px;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.main-menu {
+	margin: auto;
+	margin-right: 8%;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.main-menu ul {
+	list-style-type: none;
+}
+
+.main-menu li {
+	display: inline;
+	margin:15px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.main-menu li:hover {	
+	border-bottom: 1px solid black;
+}
+
+@media all and (max-width: 1440px) {
+	#container-header {
+		height: 780px;
+	}
+
+	#container-header p {
+		padding-top: 680px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	#container-header {
+		background:url("images/bike.jpg")no-repeat 40%;
+		height: 800px;
+	}
+
+	#container-header p {
+		padding-top: 720px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.logo {
+		font-size: 30px;
+		margin:0;
+		padding:10px;
+		text-align: center;
+		height: auto;
+	}
+
+	.content-header {
+		height: 80px;
+		display: block;
+		flex-direction: column;
+	}
+
+	#container-header {
+		height: 700px;
+	}
+
+	#container-header p {
+		padding-top: 645px;
+	}
+
+	.main-menu {
+		text-align: center;
+		font-size: 14px;
+		margin-top: -20px;
+	}
+}
+
+/* SLIDER */
+
+#container-slider {
+	background: #e4a49e;
+	padding: 60px;
+	padding-bottom: 500px;
+}
+
+#container-slider, #container-map {
+	position: relative;
+	max-width: 100%;
+}
+
+.title {
+	text-align: center;
+}
+
+.h1-slider {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 24px;
+}
+
+.sous-titre {
+	margin-top: -15px;
+	font-style: italic;
+}
+
+#content-slider {
+    position: relative;
+    max-width: 100%;
+    height: 700px;
+    margin-top: 30px;
+}
+
+#carrousel {
+    max-width: 1200px;
+    max-height: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.titre-slide {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 50px;
+	margin:0;
+	padding:0;
+}
+
+.sous-titre-slide {
+	font-size: 50px;
+	font-style: italic;
+	margin-top: 20px;
+}
+
+.texte {
+    position: absolute;
+    width: 700px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+
+.nav-arrows {
+    max-width: 1400px;
+    max-height: 700px;
+    position: relative;
+    margin : auto;
+}
+
+#button-previous {
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 335px;
+    float : left;
+}
+
+#button-next {
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 335px;
+    float : right;
+}
+
+img {
+	max-width: 100%;
+}
+
+@media all and (max-width: 1024px) {
+	#content-slider {
+		height: 525px;
+	}
+
+	.nav-arrows {
+		max-width: 850px;
+		max-height: 700px;
+	}
+
+	#button-previous, #button-next {
+		margin-top: 245px;
+		font-size:18px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	#button-previous, #button-next {
+		font-size: 20px;
+		margin-top: 180px;
+	}
+
+	.nav-arrows {
+		max-width: 600px;
+	}
+
+	.texte {
+	    width: 350px;
+	}
+
+	.titre-slide {
+		font-size: 30px;
+	}
+
+	.sous-titre-slide {
+		font-size: 20px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.title {
+		max-width: 300px;
+		margin:auto;
+	}
+
+	#carrousel, .nav-arrows {
+		display: none;
+	}
+
+	#container-slider {
+		padding-bottom: 100px;
+	}
+
+}
+
+
+/* TEXTE */
+
+.container-txt {
+	display: flex;
+	margin: auto;
+	max-width: 500px;
+	margin-top: 80px;
+	flex-wrap: wrap;
+}
+
+.left-txt {
+	font-family: 'Fjalla One', sans-serif;
+	width: 100px;
+}
+
+.right-txt {
+	text-align: justify;
+}
+
+.txt-2, .txt-3 {
+	margin-top: 30px;
+}
+
+@media all and (max-width: 768px) {
+	.container-txt {
+	    margin-top: -80px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.container-txt {
+		margin-top: -500px;
+	}
+}
+
+/* MAP */
+
+.h1-map {
+	font-family: 'Fjalla One', sans-serif;
+    font-size: 150px;
+    letter-spacing: 5px;
+    padding-top: 60px;
+}
+
+.title-map {
+	width: 680px;
+	height: auto;
+	text-align: center;
+	margin-left: 50px;
+}
+
+.sous-titre-map {
+	font-style: italic;
+	margin-top: -130px;
+}
+
+#bloc-map {
+   	max-width: 100%;
+   	margin:auto;
+    position: relative;
+    margin-top: -570px;
+}
+
+#container-map {
+	max-width: 1700px;
+	background: #e4a49e;
+	margin:auto;
+	margin-top: 60px;
+}
+
+#map {
+    max-width: 1700px;
+    height: 750px;
+}
+
+#content {
+    width: 400px;
+    height: 750px;
+    background: #C0C0C0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#infos {
+	width: 250px;
+	margin: auto;
+	margin-top: 45%;
+}
+
+.name, .address, .status, .available_bikes, .available_bike_stands {
+	color : white
+}
+
+@media all and (max-width: 1024px) {
+	#map {
+	    max-width: 100%;
+	    height: 650px;
+	}
+
+	#content {
+		height: 650px;
+	}
+
+	#infos {
+		margin-top: 30%;
+	}
+}
+
+@media all and (max-width: 768px) {
+	#bloc-map {
+	    margin-top: -600px;
+	}
+
+	#content {
+		width: 300px;
+	}
+
+	#infos {
+		width: 200px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	#bloc-map {
+		margin-top: 0px;
+	}
+	.title-map {
+		margin-left: none;
+		max-width: 300px;
+		margin: auto;
+	}
+
+	.h1-map {
+		text-align: center;
+		font-size: 24px;
+		letter-spacing: 0px;
+    	padding-top: 0px;
+	}
+
+	.sous-titre-map {
+		text-align: center;
+		margin-top: 0px;
+	}
+
+	#container-map {
+		margin-top: 30px;
+	}
+
+	#content {
+		width: 200px;
+	}
+
+	#infos {
+		width: 150px;
+	}
+}
+
+/* CANVAS */
+
+#container-canvas {
+	max-width: 1700px;
+	height: auto;
+	margin:auto;
+	margin-top: 30px;
+	display: none;
+}
+
+#container-canvas p {
+	text-align: center;
+	font-style: italic;
+}
+
+.content-canvas {
+	margin:auto;
+}
+
+#sign {
+	background: #e4a49e;
+	display: flex;
+	margin:auto;
+}
+
+.butt-canvas {
+	text-align: center;
+}
+
+@media all and (max-width: 768px) {
+	#sign {
+	    max-width: 500px;
+	    height: 250px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	#container-canvas {
+		max-width: 100%;
+	}
+
+	#sign {
+	    max-width: 100%;
+	    height: 250px;
+	}
+}
+
+/* BOOKING */
+
+.content-book {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	height: 300px;
+	justify-content: center;
+}
+
+.bloc {
+	font-family: 'Fjalla One', sans-serif;
+	font-size:14px;
+	width: 400px;
+	height: 100px;
+	margin-top: 60px;
+}
+
+
+#bloc-2 {
+	border-left:1px solid black;
+	border-right: 1px solid black;
+}
+
+h2 {
+	text-align: center;
+}
+
+.nomStation, .nomAdresse, #countdown {
+	text-align: center;
+}
+
+#annuler {
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	width: 200px;
+	height: 45px;
+	background: black;
+	color: white;
+	cursor: pointer;
+	border:none;
+	letter-spacing: 0.5px;
+}
+
+#annuler:hover {
+	background: white;
+	border: 1px solid black;
+	color:black;
+}
+
+@media all and (max-width: 1024px) {
+	.bloc {
+		width: 300px;
+	}
+
+	#annuler {
+		width: 200px;
+	}
+}
+
+@media all and (max-width: 1602px) {
+	.bloc {
+		max-width: 350px;
+	}
+}
+
+@media all and (max-width: 1210px) {
+	.bloc {
+		max-width: 250px;
+	}	
+}
+
+@media all and (max-width: 768px) {
+	#annuler {
+		margin-top: 0px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	#bloc-1, #bloc-2, #bloc-3 {
+		border-left:none;
+		border-right: none;
+		border-bottom: 1px solid black;
+	}
+}
